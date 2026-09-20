@@ -1,0 +1,23 @@
+# Normalize to LF in the repository for anything Git detects as text
+* text=auto eol=lf
+
+# Files that must keep CRLF on disk
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Files that must keep LF on disk even on Windows
+*.sh text eol=lf
+Makefile text eol=lf
+
+# Binaries — never touch
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
+*.exe binary
+
+# Terraform settings
+*.tf text eol=lf
+*.tfvars text eol=lf
+*.hcl text eol=lf

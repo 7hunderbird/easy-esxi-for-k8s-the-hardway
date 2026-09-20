@@ -1,0 +1,40 @@
+# Local .terraform directories and plugin cache
+**/.terraform/*
+.terraform.lock.hcl
+
+# State files — never commit these
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Plan output — may contain secrets in plaintext
+*.tfplan
+*.tfplan.*
+plan.out
+
+# Variable files that commonly hold secrets
+*.tfvars
+*.tfvars.json
+!example.tfvars
+!terraform.tfvars.example
+
+# Terraform CLI config and credentials
+.terraformrc
+terraform.rc
+
+# Override files (local-only customization)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
