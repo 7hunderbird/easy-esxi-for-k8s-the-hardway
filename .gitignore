@@ -38,3 +38,8 @@ override.tf.json
 *.swp
 .DS_Store
 Thumbs.db
+
+# OVA files
+
+ova/*
+!ova/README.md
