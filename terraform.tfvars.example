@@ -1,17 +1,18 @@
-vsphere_server       = "192.168.1.50"      # your ESXi host IP
-vsphere_user         = "root"
-vsphere_password     = "changeme"
-allow_unverified_ssl = true
+# ESXi Settings
 
-datacenter    = "ha-datacenter"            # default name on standalone ESXi
-esxi_host     = "192.168.1.50"
-datastore     = "datastore1"
-network       = "k8s-lab-port-group"       # dedicated port group, see README
+vsphere_server          = "192.168.1.50"
+vsphere_user            = "root"
+vsphere_password        = "changeme"
+allow_unverified_ssl    = true
+datacenter              = "ha-datacenter"
+esxi_host               = "192.168.1.50"
+datastore               = "datastore1"
+network                 = "k8s-lab-port-group"
 
-template_name = "ubuntu-2204-cloudinit-template"
+# VM Settings
 
-gateway    = "10.240.0.1"
-dns_server = "1.1.1.1"
-domain     = "k8s.local"
-
-ssh_public_key = "ssh-ed25519 AAAA... you@yourmachine"
+ssh_public_key          = "ssh-ed25519 AAAA... you@yourmachine"
+ovf_path                = "ova/resolute-server-cloudimg-amd64.ova"
+gateway                 = "10.240.0.1"
+dns_server              = "1.1.1.1"
+domain                  = "k8s.local"
